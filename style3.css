@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(93, 72, 112);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+h1, h3, h4{
+    text-align: center;
+    color: aliceblue;
+}
+#container{
+    height: 100%;
+    width: 99vw;
+   /* text-align: center;*/
+    display: inline-block;
+    border: solid 1px wheat;
+    
+}
+#puzzle{
+    height: 460px;
+    width: 830px;
+    border: solid 1px wheat;
+    float: left;
+    position: relative;
+    /*z-index: 3;*/
+}
+.item{
+    float: left;
+    width: 100px;
+    height: 110px;
+    border: solid 1px blueviolet;
+    /*z-index: 1;*/
+}
+#pieces{
+    float:left;
+    max-width: 500px;
+    overflow-y: scroll; 
+    height: 450px;
+   
+}
+#prev{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 800px;
+    height: 440px;
+    background-image: url("img/minecraft2-800x440.jpg");
+    background-repeat: no-repeat;
+    visibility: hidden;
+   /* z-index: 3;*/
+}
+#canvas{
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    z-index: -1;
+}
+#mins{
+    max-height: 140px;
+    width:97vw;
+    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-y: hidden;
+    white-space:nowrap;
+    padding: 10px;
+}
+#mins > img{
+    display: inline-block;
+    padding: 5px;
+    opacity:0.5;
+}
